@@ -1,3 +1,5 @@
+package Musica;
+
 public class Cidade {
 
     String nome;
