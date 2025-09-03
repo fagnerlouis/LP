@@ -13,6 +13,11 @@ import ImagemVikMuniz.img2trackbrawl.Trilho;
 import ImagemVikMuniz.img2trackbrawl.Lutador;
 import ImagemVikMuniz.img2trackbrawl.Mala;
 
+import Video.Bicicleta;
+import Video.Capacete;
+import Video.Camera;
+
+
 public class Main {
     public static void main(String[] args) {
         // -------- Música (classe aparece na letra) --------
@@ -60,6 +65,23 @@ public class Main {
         homem1.lutar();
         homem2.lutar();
         mala.abrir();
+
+        // -------- Vídeo --------
+        Bicicleta bike = new Bicicleta("Alumínio 6061", 21, 29);
+        Capacete capacete = new Capacete("M", "ABS", false);
+        Camera camera = new Camera("4K", 60, false);
+
+        bike.pedalar();
+        bike.trocarMarcha();
+        bike.frear();
+
+        capacete.ajustar();
+        capacete.prender();
+        capacete.inspecionar();
+
+        camera.gravar();
+        camera.parar();
+        camera.trocarBateria();
 
     }
 }
