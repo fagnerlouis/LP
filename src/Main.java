@@ -9,6 +9,10 @@ import Doodle.Astronauta;
 import Doodle.Perifericos;
 import Doodle.Robo;
 
+import ImagemVikMuniz.img2trackbrawl.Trilho;
+import ImagemVikMuniz.img2trackbrawl.Lutador;
+import ImagemVikMuniz.img2trackbrawl.Mala;
+
 public class Main {
     public static void main(String[] args) {
         // -------- Música (classe aparece na letra) --------
@@ -45,5 +49,17 @@ public class Main {
         robo.apresentar();
         robo.executarTarefa();
         robo.recarregar();
+
+        // -------- Imagem Vik Muniz: Track Brawl --------
+        Trilho trilho = new Trilho("aço", 100.0, true);
+        Lutador homem1 = new Lutador("Homem A", 80, false);
+        Lutador homem2 = new Lutador("Homem B", 75, false);
+        Mala mala = new Mala("marrom", "couro", false);
+
+        trilho.transportar();
+        homem1.lutar();
+        homem2.lutar();
+        mala.abrir();
+
     }
 }
