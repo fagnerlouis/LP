@@ -5,6 +5,12 @@ public class Robo {
     int nivelEnergia;
     boolean temIA;
 
+    public Robo(String modelo, int nivelEnergia, boolean temIA) {
+        this.modelo = modelo;
+        this.nivelEnergia = nivelEnergia;
+        this.temIA = temIA;
+    }
+
     public void executarTarefa() {
         System.out.println("O robô " + modelo + " está executando uma tarefa.");
     }

@@ -6,17 +6,13 @@ public class Cidade {
     int numeroDePredios;
     String pais;
 
+    public Cidade(String nome, int numeroDePredios, String pais) {
+        this.nome = nome;
+        this.numeroDePredios = numeroDePredios;
+        this.pais = pais;
+    }
+
     public void descricao() {
         System.out.println(nome + " está localizada em " + pais + " e possui cerca de " + numeroDePredios + " prédios.");
     }
-
-    public static void main(String[] args) {
-        Cidade veneza = new Cidade();
-        veneza.nome = "Veneza";
-        veneza.numeroDePredios = 3000;
-        veneza.pais = "Itália";
-
-        veneza.descricao();
-    }
 }
-

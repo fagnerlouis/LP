@@ -6,13 +6,18 @@ public class Arma {
     int qtdtiros;
     String dono;
 
+    public Arma(String modelo, int qtdtiros, String dono) {
+        this.modelo = modelo;
+        this.qtdtiros = qtdtiros;
+        this.dono = dono;
+    }
+
     public void atirar(int tiros) {
-        System.out.println("A arma disparou " + tiros + " tiros");
-    }
+        System.out.println("A arma " + modelo + " disparou " + tiros + " tiros");
 
-    public static void main(String[] args) {
-        Arma winchester22 = new Arma();
-        winchester22.atirar(5);
-    }
+        for (int i = 1; i <= tiros; i++) {
+            System.out.println("pow");
+        }
 
+    }
 }

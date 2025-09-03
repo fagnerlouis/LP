@@ -6,16 +6,13 @@ public class Cidade {
     String regiao;
     boolean eViolenta;
 
+    public Cidade(String nome, String regiao, boolean eViolenta) {
+        this.nome = nome;
+        this.regiao = regiao;
+        this.eViolenta = eViolenta;
+    }
+
     public void transformar() {
-        System.out.println("A cidade transformou a pessoa.");
+        System.out.println("A cidade " + nome + " transformou a pessoa.");
     }
-
-    public static void main(String[] args) {
-        Cidade brasilia = new Cidade();
-        brasilia.nome = "Brasilia";
-        brasilia.regiao = "Plano Piloto";
-        brasilia.eViolenta = true;
-        brasilia.transformar();
-    }
-
 }

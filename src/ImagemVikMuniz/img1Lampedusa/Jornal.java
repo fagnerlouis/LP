@@ -6,17 +6,13 @@ public class Jornal {
     String idioma;
     int numeroDePaginas;
 
+    public Jornal(String titulo, String idioma, int numeroDePaginas) {
+        this.titulo = titulo;
+        this.idioma = idioma;
+        this.numeroDePaginas = numeroDePaginas;
+    }
+
     public void exibirNoticia() {
         System.out.println("Manchete: " + titulo + " (" + idioma + ")");
     }
-
-    public static void main(String[] args) {
-        Jornal jornal = new Jornal();
-        jornal.titulo = "Centenaia di morti";
-        jornal.idioma = "Italiano";
-        jornal.numeroDePaginas = 24;
-
-        jornal.exibirNoticia();
-    }
 }
-

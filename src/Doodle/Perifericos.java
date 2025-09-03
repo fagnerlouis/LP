@@ -5,6 +5,12 @@ public class Perifericos {
     String marca;
     boolean conectado;
 
+    public Perifericos(String tipo, String marca, boolean conectado) {
+        this.tipo = tipo;
+        this.marca = marca;
+        this.conectado = conectado;
+    }
+
     public void conectar() {
         conectado = true;
         System.out.println("O periférico " + tipo + " da marca " + marca + " foi conectado.");

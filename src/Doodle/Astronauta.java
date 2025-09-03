@@ -5,6 +5,12 @@ public class Astronauta {
     String missao;
     int nivelOxigenio;
 
+    public Astronauta(String nome, String missao, int nivelOxigenio) {
+        this.nome = nome;
+        this.missao = missao;
+        this.nivelOxigenio = nivelOxigenio;
+    }
+
     public void explorar() {
         System.out.println("O astronauta " + nome + " está explorando a missão " + missao + ".");
     }
