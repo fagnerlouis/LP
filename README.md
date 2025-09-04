@@ -4,80 +4,127 @@ Projeto da disciplina de Linguagem de Programação: modelagem a partir de **Mú
 
 ---
 
+## 🧪 Teste de Mesa
+O teste de mesa com 10 cenários (entradas e resultados da média) está disponível no arquivo:
+[Atividade Linguagem de Programação.xlsx](Atividade%20Linguagem%20de%20Programação.xlsx)
+
+---
+
 ## 🎵 Música - Faroeste Caboclo (Legião Urbana)
 
-| **Personagem** |
-|---|
-| **Atributos**<br>• nome: String<br>• origem: String<br>• estaVivo: boolean |
-| **Métodos**<br>• viajar(destino: String): void |
+## 📐 UML
 
-| **Cidade** |
-|---|
-| **Atributos**<br>• nome: String<br>• regiao: String<br>• eViolenta: boolean |
-| **Métodos**<br>• transformar(): void |
-
-| **Arma** |
-|---|
-| **Atributos**<br>• modelo: String<br>• qtdtiros: int<br>• dono: String |
-| **Métodos**<br>• atirar(tiros: int): void |
-
+```mermaid
+classDiagram
+class Personagem{
+  +nome: String
+  +origem: String
+  +estaVivo: boolean
+  +viajar(destino: String): void
+}
+class Cidade{
+  +nome: String
+  +regiao: String
+  +eViolenta: boolean
+  +transformar(): void
+}
+class Arma{
+  +modelo: String
+  +qtdTiros: int
+  +dono: String
+  +atirar(tiros: int): void
+}
+```
 
 ---
 
 ## 🖼️ Obra Vik Muniz – *Lampedusa*
 
-| **Barco** |
-|---|
-| **Atributos**<br>• material: String<br>• tamanho: double<br>• capacidade: int |
-| **Métodos**<br>• navegar(): void |
+## 📐 UML 
 
-| **Cidade** |
-|---|
-| **Atributos**<br>• nome: String<br>• numeroDePredios: int<br>• pais: String |
-| **Métodos**<br>• descricao(): void |
-
-| **Jornal** |
-|---|
-| **Atributos**<br>• titulo: String<br>• idioma: String<br>• numeroDePaginas: int |
-| **Métodos**<br>• exibirNoticia(): void |
+```mermaid
+classDiagram
+class Barco{
+  +material: String
+  +tamanho: double
+  +capacidade: int
+  +navegar(): void
+}
+class Cidade{
+  +nome: String
+  +numeroDePredios: int
+  +pais: String
+  +descricao(): void
+}
+class Jornal{
+  +titulo: String
+  +idioma: String
+  +numeroDePaginas: int
+  +exibirNoticia(): void
+}
+```
 
 ---
 
 ## 🖼️ Obra Vik Muniz – *Track Brawl*
 
-| **Trilho** |
-|---|
-| **Atributos**<br>• material: String<br>• comprimento: double<br>• emUso: boolean |
-| **Métodos**<br>• transportar(): void |
+## 📐 UML
 
-| **Lutador** |
-|---|
-| **Atributos**<br>• nome: String<br>• forca: int<br>• cansado: boolean |
-| **Métodos**<br>• lutar(): void |
-
-| **Mala** |
-|---|
-| **Atributos**<br>• cor: String<br>• material: String<br>• aberta: boolean |
-| **Métodos**<br>• abrir(): void |
+```mermaid
+classDiagram
+class Trilho{
+  +material: String
+  +comprimento: double
+  +emUso: boolean
+  +transportar(): void
+}
+class Lutador{
+  +nome: String
+  +forca: int
+  +cansado: boolean
+  +lutar(): void
+}
+class Mala{
+  +cor: String
+  +material: String
+  +aberta: boolean
+  +abrir(): void
+}
+```
 
 ---
 
 ## 🎨 Doodle
 
-| **Astronauta** |
-|---|
-| **Atributos**<br>• nome: String<br>• missao: String<br>• nivelOxigenio: int |
-| **Métodos**<br>• explorar(): void<br>• comunicar(): void<br>• reabastecerOxigenio(): void |
+## 📐 UML
 
-| **Perifericos** |
-|---|
-| **Atributos**<br>• tipo: String<br>• marca: String<br>• conectado: boolean |
-| **Métodos**<br>• conectar(): void<br>• desconectar(): void<br>• status(): void |
-
-| **Robo** |
-|---|
-| **Atributos**<br>• modelo: String<br>• nivelEnergia: int<br>• temIA: boolean |
-| **Métodos**<br>• executarTarefa(): void<br>• recarregar(): void<br>• apresentar(): void |
+```mermaid
+classDiagram
+class Astronauta{
+  +nome: String
+  +missao: String
+  +nivelOxigenio: int
+  +explorar(): void
+  +comunicar(): void
+  +reabastecerOxigenio(): void
+}
+class Perifericos{
+  +tipo: String
+  +marca: String
+  +conectado: boolean
+  +conectar(): void
+  +desconectar(): void
+  +status(): void
+}
+class Robo{
+  +modelo: String
+  +nivelEnergia: int
+  +temIA: boolean
+  +executarTarefa(): void
+  +recarregar(): void
+  +apresentar(): void
+}
+```
 
 ---
 
@@ -85,19 +132,34 @@ Projeto da disciplina de Linguagem de Programação: modelagem a partir de **Mú
 https://www.youtube.com/shorts/MQbCJ1ldr9A
 
 
-| **Bicicleta** |
-|---|
-| **Atributos**<br>• quadro: String<br>• marchas: int<br>• aro: int |
-| **Métodos**<br>• pedalar(): void<br>• frear(): void<br>• trocarMarcha(): void |
+## 📐 UML
 
-| **Capacete** |
-|---|
-| **Atributos**<br>• tamanho: String<br>• material: String<br>• preso: boolean |
-| **Métodos**<br>• ajustar(): void<br>• prender(): void<br>• inspecionar(): void |
-
-| **Camera** |
-|---|
-| **Atributos**<br>• resolucao: String<br>• fps: int<br>• gravando: boolean |
-| **Métodos**<br>• gravar(): void<br>• parar(): void<br>• trocarBateria(): void |
+```mermaid
+classDiagram
+class Bicicleta{
+  +quadro: String
+  +marchas: int
+  +aro: int
+  +pedalar(): void
+  +frear(): void
+  +trocarMarcha(): void
+}
+class Capacete{
+  +tamanho: String
+  +material: String
+  +preso: boolean
+  +ajustar(): void
+  +prender(): void
+  +inspecionar(): void
+}
+class Camera{
+  +resolucao: String
+  +fps: int
+  +gravando: boolean
+  +gravar(): void
+  +parar(): void
+  +trocarBateria(): void
+}
+```
 
 ---
