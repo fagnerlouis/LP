@@ -17,6 +17,8 @@ import Video.Bicicleta;
 import Video.Capacete;
 import Video.Camera;
 
+import CalculoMedia.CalculoMedia;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
