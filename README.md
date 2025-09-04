@@ -21,6 +21,7 @@ Projeto da disciplina de Linguagem de Programação: modelagem a partir de **Mú
 | **Atributos**<br>• modelo: String<br>• qtdtiros: int<br>• dono: String |
 | **Métodos**<br>• atirar(tiros: int): void |
 
+
 ---
 
 ## 🖼️ Obra Vik Muniz – *Lampedusa*
